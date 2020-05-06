@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+//Tugas bahasa pemrograman penerapan perulangan dan selection
+int main ()	{
+	cout << " 
+	adalah bilangan prima " << endl;
+	int angka_awal = 4;
+	int angka_akhir = 617;
+	
+	for (int i = angka_awal; i <= angka_akhir; i++)
+	{
+		int counter_prima = 0;
+		for (int j = 1; j <= i; j++)
+		{
+			if (i % j == 0)
+			{
+				counter_prima++;
+			}
+		}
+		if (counter_prima == 2)
+		{
+			cout << i << " adalah bilangan prima " << endl;
+		}
+	}
+	return 0;
+}
+
